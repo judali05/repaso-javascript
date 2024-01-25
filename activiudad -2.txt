@@ -1,0 +1,15 @@
+
+trabajo realizado por : julian david rojas saavedra y jesus layonel cabezas ordoñez
+
+var doc = prompt ('¿cual es tu documento de identidad?')
+
+var nom = prompt ('¿ingrese su primer nombre?')
+
+var sueldo = prompt ('¿ingrese su sueldo mensual')
+
+var dias_trabajados = prompt ('¿ingrese loa dias trabajados en el mes?')
+
+var total = sueldo/30*dias_trabajados
+
+alert("el usuario " + nom + " identificado con el documento " + doc + " con el sueldo mensual que es " + sueldo + " y por tabajar " + dias_trabajados + " dias es " + total)
+
