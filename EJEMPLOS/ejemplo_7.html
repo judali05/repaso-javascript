@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ejemplo_7</title>
     <script>
-        var nom = prompt("ingrese su nombre")
-        var año = prompt("ingrese su año de nacimiento")
-        var mes = prompt("ingrese su mes de nacimiento")
-        var dia = prompt("ingrese su dia de nacimiento")
+        var nom = prompt("ingrese su nombre");
+        var año = prompt("ingrese su año de nacimiento");
+        var mes = prompt("ingrese su mes de nacimiento");
+        var dia = prompt("ingrese su dia de nacimiento");
         
         const fecha = new Date();
     
         const añoActual = fecha.getFullYear();
+        const mesActual = fecha.getMonth()+1; 
         const hoyActual = fecha.getDate();
-        const mesActual = fecha.getMonth() + 1; 
 
-        t_años = añoActual - año
-        t_mes = mesActual - mes
-        t_dia = hoyActual - dia
+        if(mes>mesActual){
+            t_años = añoActual - año -1;
+        }else{
+            t_años = añoActual - año;
+        }
 
-        alert("señor "+ nom+" usted tiene "+t_años+" le faltan "+t_mes+" meses y "+t_dia+" dias para su cumpleaños") 
+        t_mes = 12 - mes + mesActual; 
+        t_dia = hoyActual - dia;
 
+        alert("Señor " + nom + " su edad esta en los " + t_años + " años, usted cumplio años hace " + t_mes + " meses y " + t_dia + " dias"); 
 
-
-
-/*
-        var nom =  prompt ("escriba por favor su nombre")
-        const fecha =new date();
-        const fecha_actual =getFullYear();
-        alert = (fecha_actual)
-
-        */
     </script>
 
 </head>
