@@ -8,21 +8,18 @@
 </head>
 <body>
     <div class="cont">
-    <h1>porcentaje sueldo total</h1>
-    <form id="formulario" >
-        
-        <label for="documento">Documento:</label><input id="documento" class="entradas" type="text" required>
-        <label for="nombre">Nombre:</label><input id="nombre" class="entradas" type="text" required>
-        <label for="sueldo">Sueldo Mensual:</label><input id="sueldo" class="entradas" type="text" required>
-        <label for="diasTrabajados">Días Trabajados:</label><input id="diasTrabajados" class="entradas" type="text" required>
-        <label for="horasExtra">Horas Extra:</label><input id="horasExtra" class="entradas" type="text">
-    
-        <button class="btn" type="submit">mostrar datos</button>
-    </form>
+        <h1>porcentaje sueldo total</h1>
+        <form id="formulario" >
+            <label for="documento">Documento:</label><input id="documento" class="entradas" type="text" required>
+            <label for="nombre">Nombre:</label><input id="nombre" class="entradas" type="text" required>
+            <label for="sueldo">Sueldo Mensual:</label><input id="sueldo" class="entradas" type="text" required>
+            <label for="diasTrabajados">Días Trabajados:</label><input id="diasTrabajados" class="entradas" type="text" required>
+            <label for="horasExtra">Horas Extra:</label><input id="horasExtra" class="entradas" type="text">
+            <button class="btn" type="submit">mostrar datos</button>
+            
+        </form>
     </div>
-    
     <h3 id="respuesta"></h3>
-
 
     <script>
         //conexion al formulario
@@ -32,7 +29,6 @@
 
         // funcion para validar los datos registrados
         function validarFormulario(e){
-
         e.preventDefault();
 
         //crear variables para las respuestas suministradas en el formulario
@@ -50,13 +46,13 @@
         const totalNeto = totalDiasTrabajados + totalHoraExtra - descuentoSalud - descuentoPension;
 
         const respuesta = document.querySelector("#respuesta");
-        respuesta.textContent =(nombre + " identificado con el documento " + documento + " con un sueldo mensual de " + sueldo + ", por los " +
-         diasTrabajados + " dias trabajados con un valor de " + totalDiasTrabajados + ", mas " + horasExtra + " horas extras diurnas trabajadas con un valor de "
-          + totalHoraExtra + ", menos el descuento de salud que se pagara con un valor de " + descuentoSalud + 
-         ", menos el descuento de pensión que se pagara con un valor de " + descuentoPension + ", el cual terminaria dando un resultado de " + totalNeto + 
-         " el cual se le pagara al presente");
+        respuesta.textContent =(nombre + " identificado con el documento " + documento + " con un sueldo mensual de " + sueldo + ", por los " + diasTrabajados + " dias trabajados con un valor de "
+        + totalDiasTrabajados + ", mas " + horasExtra + " horas extras diurnas trabajadas con un valor de " 
+        + totalHoraExtra + ", menos el descuento de salud que se pagara con un valor de " + descuentoSalud + 
+        ", menos el descuento de pensión que se pagara con un valor de " + descuentoPension + ", el cual terminaria dando un resultado de " + totalNeto + 
+        " el cual se le pagara al presente");
 
-         console.log( totalDiasTrabajados, totalHoraExtra, descuentoSalud, descuentoPension)
+        console.log( totalDiasTrabajados, totalHoraExtra, descuentoSalud, descuentoPension)
 
     }
 
