@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    border: 3px solid hsl(212, 72%, 29%);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    box-shadow: 14px 14px 5px 0px rgba(50, 50, 50, 0.58);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    display: inline-block;
+}
+
+.cont2 {
+    margin: auto;
+    width: 10%;
+    margin-top: 100px;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: hsl(212, 72%, 29%);
+    border-style: none;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
