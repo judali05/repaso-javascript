@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo_15</title>
+
+    <script>
+         var personas =[
+            {
+            nombre:"simon",
+            apellido: "bolivar",
+            edad: 38
+            },
+            {
+            nombre:"pedro",
+            apellido: "navajas",
+            edad: 56
+            },
+            {
+            nombre:"juanito",
+            apellido: "alimaña",
+            edad: 25
+            }
+
+        ];
+
+        let tem = {
+            nombre: nom,
+            apellido: ape,
+            edad:eda
+        };
+
+        var nom=document.getElementById("nombre").value;
+        var ape=document.getElementById("apellido").value;
+        var eda=document.getElementById("edad").value;
+
+        personas.push(tem);
+       
+       
+
+    </script>
+</head>
+<body>
+
+    
+    <form id="formulario">
+        <input type="text" id="nombre"/><br /><br />
+
+        <input type="text" id="apellido"/><br /><br />
+
+        <input type="text" id="edad"/><br><br />
+
+        <input type="submit" value="enviar" onclick="mostrar()" />
+    </form>
+
+    <table>
+        <th>
+            <td>nombre</td>
+            <td>apellido</td>
+            <td>edad</td>
+        </th>
+        <tr>
+            <td id="nom"></td>
+            <td id="ape"></td>
+            <td id="eda"></td>
+        </tr>
+        
+    </table>
+
+    
+</body>
+</html>
