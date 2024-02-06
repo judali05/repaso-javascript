@@ -18,6 +18,10 @@ function dividir(x1,x2)
     }
 }
 
+function exponenciar(x1,x2){
+    return x1**x2;
+}
+
 function mostrarerror(){
     console.log("no se puede dividir por cero")
 }
