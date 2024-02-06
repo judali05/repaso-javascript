@@ -19,7 +19,14 @@ function dividir(x1,x2)
 }
 
 function exponenciar(x1,x2){
-    return x1**x2;
+    //return x1**x2;
+
+    resultado = 1
+    for(i = 1; i <= x2; i++){
+        resultado = resultado * x1;
+    }
+    return resultado
+
 }
 
 function mostrarerror(){
@@ -29,4 +36,6 @@ function mostrarerror(){
 exports.sumar=sumar;
 exports.restar=restar;
 exports.dividir=dividir;
+exports.exponenciar=exponenciar;
 exports.PI=PI;
+
