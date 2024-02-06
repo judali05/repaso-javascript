@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taller_5</title>
+    <script>
+
+        function validarCredenciales() {
+            var nom_1 = document.getElementById("nombre_1").value;
+            var con_1 = document.getElementById("contraseña_1").value;
+            con_1 = parseInt(con_1);
+
+            if (nom_1 === "julian" && con_1 === 12345678) {
+                alert("Inicio de sesión exitoso");
+                nuevo = window.open('','VE', width=400, height=390, top=50, left=100);
+                nuevo.location.href = "menu_principal.html";
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+
+        function limita(maximoCaracteres) {
+            var elemento = document.getElementById("contraseña_1");
+            if (elemento.value.length >= maximoCaracteres) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>formulario</h1>
+    <h2>validar usuario</h2>
+    <form id="formulario">
+        <input type="text" id="nombre_1" placeholder="nombre" required>
+        <input type="password" id="contraseña_1" placeholder="contraseña" onkeypress="return limita(8);" required>
+        <input type="submit" onclick="validarCredenciales()">
+    </form>
+
+
+    
+</body>
+</html>
+
+
+
+
