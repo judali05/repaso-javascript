@@ -11,4 +11,4 @@ console.log("la division de 6/2 es= "+mat.dividir(6,2));
 
 console.log("el valor de PI es= "+mat.PI);
 
-console.log("el valor de 4 exponenciado a la 3 es = "+mat.exponenciar(4,3));
+console.log("el valor de la exponenciacion = " + mat.exponenciar(5,4));
