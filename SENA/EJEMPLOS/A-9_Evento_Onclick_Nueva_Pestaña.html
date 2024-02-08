@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo_9</title>
+    <script>
+        
+        function llamar(e){
+            var nuevo = null;
+            var pagina = new Array("ejemplo_8.html","https://github.com/judali05/JAVASCRIPT");
+            nuevo = window.open('','VE', width=400, height=390, top=50, left=100);
+            nuevo.location.href=pagina[e];
+        }
+
+        function CerrarSesion(){
+            window.close();
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="ejemplo_8.html" name="B1" onclick="llamar(0)";><br>
+        <input type="button" value="github" name="B2" onclick="llamar(1)";><br>
+        <input type="button" value="Cerrar Sesion" name="B3" onclick="CerrarSesion()"><br>
+    </form>
+</body>
+</html>

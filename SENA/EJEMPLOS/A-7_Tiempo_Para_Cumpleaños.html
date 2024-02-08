@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo_7</title>
+    <script>
+
+        var año = prompt("ingrese su año de nacimiento");
+        var mes = prompt("ingrese su mes de nacimiento");
+        var dia = prompt("ingrese su dia de nacimiento");
+        
+        const fecha = new Date();
+    
+        const añoActual = fecha.getFullYear();
+        const mesActual = fecha.getMonth(); 
+        const hoyActual = fecha.getDate();
+
+  
+        if(mes>mesActual){
+            t_años = añoActual - año - 1;
+        }else{
+            t_años = añoActual - año ;
+        }
+
+
+        if(mes>=mesActual){
+            t_mes = 12 - mes - mesActual;
+        }else{
+            t_mes = mes - mesActual ;
+        }
+        
+       
+        if(dia>=hoyActual){
+            t_dia = hoyActual - dia + 30;
+        }else{
+            t_dia = hoyActual - dia;
+        }
+    
+
+        alert("Señor su edad esta es " + t_años + " años, usted cumplio años hace " + t_mes + " meses y " + t_dia + " dias"); 
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
