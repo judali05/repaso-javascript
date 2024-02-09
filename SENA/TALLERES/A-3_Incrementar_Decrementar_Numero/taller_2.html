@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taller_2</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        let contador = 0
+
+        function incrementar(){
+            contador += 2;
+            actualizarNumero();
+        }
+
+        function decrementar(){
+           
+            if(contador>0){
+                contador -= 2;
+                actualizarNumero();
+            }else{
+                alert("El numero no se puede decrementar más :V ")
+            }
+        }
+
+        function closeWindow(){
+            window.close();
+        }
+
+        function actualizarNumero(){
+            const respuesta = document.querySelector("#respuesta");
+            respuesta.textContent = (contador);
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="cont"><h1 id="respuesta">0</h1></div>
+
+    <div class="cont2"> 
+    <form>
+        <input class="btn" type="button" value="incrementar" name="a1" onclick="incrementar()"><br>
+        <input class="btn" type="button" value="decrementar" name="a2" onclick="decrementar()"><br>
+        <input class="btn" type="button" value="Cerrar" name="a3" onclick="closeWindow()"><br>
+
+    </form>
+    </div>
+
+</body>
+</html>
