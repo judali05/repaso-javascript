@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo_15</title>
+
+    <script>
+        var personas =[];
+
+        function mostrar() {
+            var nom = document.getElementById("nombre").value;
+            var ape = document.getElementById("apellido").value;
+            var eda = document.getElementById("edad").value;
+
+            var tem = { nombre:nom, apellido:ape, edad:parseInt(eda) };
+
+            personas.push(tem);
+        
+            document.getElementById("formulario").reset();
+            
+            mostrarP();
+        }
+
+
+        function mostrarP() {
+            var tablaPersonas = document.getElementById("tablaPersonas");
+            tablaPersonas.innerHTML = "";
+
+            for (var i = 0; i < personas.length; i++) {
+                var persona = personas[i];
+
+                var fila = document.createElement("tr");
+
+                var celdaNombre = document.createElement("td");
+                celdaNombre.textContent = persona.nombre;
+
+                var celdaApellido = document.createElement("td");
+                celdaApellido.textContent = persona.apellido;
+
+                var celdaEdad = document.createElement("td");
+                celdaEdad.textContent = persona.edad;
+
+
+                fila.appendChild(celdaNombre);
+                fila.appendChild(celdaApellido);
+                fila.appendChild(celdaEdad);
+
+
+                tablaPersonas.appendChild(fila);
+            }
+        }
+        mostrarP();
+
+    </script>
+</head>
+
+<body>
+    <form id="formulario">
+        <input type="text" id="nombre"/><br /><br />
+        <input type="text" id="apellido"/><br /><br />
+        <input type="text" id="edad"/><br><br />
+
+        <input type="button" value="mostrar" onclick="mostrar()" />
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>nombre</td>
+                <th>apellido</td>
+                <th>edad</td>
+            </tr>
+        </thead>
+
+        <tbody id="tablaPersonas">
+        </tbody>
+        
+    </table>
+</body>
+</html>
