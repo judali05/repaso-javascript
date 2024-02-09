@@ -1,3 +1,4 @@
+//instalar la libreria de mysql de node para que funciones
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
