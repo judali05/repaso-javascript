@@ -1,4 +1,4 @@
-<img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-41-1175209.png" style="width: 120px; height: 120px; margin: 2px;" align="left" >
+<img src="https://raw.githubusercontent.com/Brayan-Hc11/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-plain.svg" style="width: 120px; height: 120px; margin: 2px;" align="left" >
 
 <div align="center"><h1> :beginner: CURSO DE JAVASCRIPT :beginner: </h1></div>
 
