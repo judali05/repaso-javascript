@@ -5,7 +5,7 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "blacklabel"
+    database: "black_45"
 });
 
 
