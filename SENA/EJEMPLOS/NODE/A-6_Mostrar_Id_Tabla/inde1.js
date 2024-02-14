@@ -24,6 +24,17 @@ app.get('/usuarios/:nombre', (req, res) => {
     });
 });
 
+app.post('/productos', (req, res) => {
+    const {id, nombre, descripcion, valor, cantidad,url}=request.body;
+    conexion.query("INSERT INTO productos(id, nombre, descripcion, valor, cantidad,url) VALUES(?,?,?,?,?,?)",
+    [id, nombre, descripcion, valor, cantidad,url],
+    (error,resultado)=>{
+        if (error)
+          throw error;
+        express.response.status(201).json({"Item Añadido Correctamente": resultado.affectedRows});
+    });
+});
+
 app.listen(8080, function(){
     console.log("Estamos activos papi!");
 });
