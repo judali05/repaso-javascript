@@ -1,4 +1,4 @@
-<img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo-500x281.png" style="width: 120px; height: 120px; margin: 2px;" align="left" >
+<img src="[https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Logo-500x281.png](https://github.com/judali05/JAVASCRIPT/blob/main/javascript-logo.png)" style="width: 120px; height: 120px; margin: 2px;" align="left" >
 
 <div align="center"><h1> :beginner: CURSO DE JAVASCRIPT :beginner: </h1></div>
 
