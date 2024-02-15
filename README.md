@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Brayan-Hc11/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-plain.svg" style="width: 120px; height: 120px; margin: 2px;" align="left" >
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Far.inspiredpencil.com%2Fpictures-2023%2Fjavascript-logo&psig=AOvVaw2Niev0U3wxSZyIXcUyt4U6&ust=1708106354912000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCappb2rYQDFQAAAAAdAAAAABAw" style="width: 120px; height: 120px; margin: 2px;" align="left" >
 
 <div align="center"><h1> :beginner: CURSO DE JAVASCRIPT :beginner: </h1></div>
 
