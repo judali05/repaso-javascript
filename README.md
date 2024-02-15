@@ -1,4 +1,4 @@
-<img src="https://github.com/judali05/JAVASCRIPT/blob/main/javascript-logo.png" style="width: 120px; height: 120px; margin: 2px;" align="left" >
+<img src="https://github.com/judali05/JAVASCRIPT/blob/main/javascript_logo.png" style="width: 120px; height: 120px; margin: 2px;" align="left" >
 
 <div align="center"><h1> :beginner: CURSO DE JAVASCRIPT :beginner: </h1></div>
 
