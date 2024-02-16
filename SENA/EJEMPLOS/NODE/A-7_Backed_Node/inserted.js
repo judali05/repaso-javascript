@@ -9,21 +9,6 @@ var con = mysql.createConnection({
     database: "black_45"
 });
 
-app.get('/usuarios', (req, res) => {
-    const query = 'SELECT * FROM usuarios';
-    con.query(query, (error, resultado) => {
-        if (error){return console.error(error.message);}
-
-        if (resultado != 0) {
-            res.json(resultado);
-        } else {
-            res.json('no hay registros');
-        }
-    });
-});
-
-app.use(express.json());
-
 app.post('/usuarios', (req, res) => {
     const {id_usuario, documento, nombre_usuario, apellido_usuario, contraseña, correo, id_estado}=req.body;
     con.query("INSERT INTO usuarios (id_usuario, documento, nombre_usuario, apellido_usuario, contraseña, correo, id_estado) VALUES(?,?,?,?,?,?,?)",
