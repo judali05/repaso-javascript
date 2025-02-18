@@ -1,10 +1,9 @@
 <img src="https://github.com/judali05/JAVASCRIPT/blob/main/javascript_logo.png" 
-  style="width: 75px; height: 75px;" 
-  align="left">   
+     style="width: 65px; height: 65px; margin-right: 15px;" align="left">  
 
-<div align="center">
-    <h1> CURSO DE JAVASCRIPT </h1>
-</div>   
+# Curso de Javascript
+
+<br>
 
 
 ## https://lenguajejs.com/javascript/dom/que-es/
