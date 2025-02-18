@@ -1,13 +1,14 @@
-<div align="right"> 
-     <img src="https://github.com/judali05/JAVASCRIPT/blob/main/javascript_logo.png" 
-     style="width: 100px; height: 100px; margin-right: 15px;" align="left">  
-</div> 
+
 <div align="right"> 
     <img src="https://img.shields.io/badge/javascript-lenguaje%20de%20programacion-fff700?style=for-the-badge&logo=javascript&labelColor=080808" 
          alt="JavaScript - Lenguaje de Programación">     
 </div>  
+<div align="left"> 
+     <img src="https://github.com/judali05/JAVASCRIPT/blob/main/javascript_logo.png" 
+     style="width: 65px; height: 65px; margin-right: 15px;" align="left">  
+</div> 
 
-# curso javascript
+# Curso de Javascript
 
 
 
