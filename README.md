@@ -2,7 +2,7 @@
   style="width: 75px; height: 75px;" 
   align="left">   
 
-<div>
+<div align="center">
     <h1> CURSO DE JAVASCRIPT </h1>
 </div>   
 
