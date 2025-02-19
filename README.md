@@ -8,7 +8,7 @@
      style="width: 65px; height: 65px; margin-right: 15px;" align="left">  
 </div> 
 
-# Curso de Javascript
+# Repaso Javascript
 
 
 
