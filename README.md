@@ -12,7 +12,7 @@
 
 
 
-
+<br><br>
 ---
 
 ## [¿Qué es el DOM en JavaScript?](https://lenguajejs.com/javascript/dom/que-es/)
