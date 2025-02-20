@@ -1,6 +1,6 @@
 
 <div align="right"> 
-    <img src="https://img.shields.io/badge/javascript-lenguaje%20de%20programacion-e4dc2c?style=for-the-badge&logo=javascript&labelColor=080808" 
+    <img src="https://img.shields.io/badge/javascript-lenguaje%20de%20programacion-f3d01f?style=for-the-badge&logo=javascript&labelColor=080808" 
          alt="JavaScript - Lenguaje de Programación">     
 </div>  
 <div align="left"> 
