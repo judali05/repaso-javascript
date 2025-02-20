@@ -1,0 +1,59 @@
+:root {
+    --color-fondo: rgb(211, 211, 211);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    transition: background 0.5s;
+    font-family:monospace;
+}
+
+header {
+    background-color: #1b2c36;
+    padding: 1%;
+}
+
+h1 {
+    color: #c0c0c0;
+
+}
+
+div {
+    margin: auto;
+    margin-top: 12%;
+    width: 280px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#cont_1 {
+    background-color: hsl(0, 0%, 100%);
+    border: 2px, solid, #1b2c36;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15%;
+    color: #1b2c36;
+}
+
+button {
+    background-color: #1b2c36;
+    width: 100%;
+    margin-top: 18%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+
+button:hover {
+    background-color: #22333d;
+}
