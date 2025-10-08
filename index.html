@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edad con Condicionales y Bucles</title>
+  <script>
+
+    // Variable del año de nacimiento
+    let año = parseInt(prompt("Ingrese su año de nacimiento:"));
+    while (isNaN(año) || año < 1900 || año > new Date().getFullYear()) {
+      alert("Año inválido. Intente de nuevo.");
+      año = parseInt(prompt("Ingrese su año de nacimiento:"));
+    }
+
+    // Variable del mes de nacimiento
+    let mes = parseInt(prompt("Ingrese su mes de nacimiento (1-12):"));
+    while (isNaN(mes) || mes < 1 || mes > 12) {
+      alert("Mes inválido. Intente de nuevo.");
+      mes = parseInt(prompt("Ingrese su mes de nacimiento (1-12):"));
+    }
+     
+    // Variable del dia de nacimiento
+    let dia = parseInt(prompt("Ingrese su día de nacimiento (1-31):"));
+    while (isNaN(dia) || dia < 1 || dia > 31) {
+      alert("Día inválido. Intente de nuevo.");
+      dia = parseInt(prompt("Ingrese su día de nacimiento (1-31):"));
+    }
+
+    // Variables de las fechas
+    const fecha = new Date();
+    const añoActual = fecha.getFullYear();
+    const mesActual = fecha.getMonth() + 1;
+    const diaActual = fecha.getDate();
+
+    let t_años, t_mes, t_dia;
+
+    // Opercacione de años
+    if (mesActual > mes || (mesActual === mes && diaActual >= dia)) {
+      t_años = añoActual - año;
+    } else {
+      t_años = añoActual - año - 1;
+    }
+
+    // Operacion de meses
+    if (mesActual >= mes) {
+      t_mes = mesActual - mes;
+    } else {
+      t_mes = 12 - (mes - mesActual);
+    }
+
+    // Operacon de dias
+    if (diaActual >= dia) {
+      t_dia = diaActual - dia;
+    } else {
+      t_dia = (30 - (dia - diaActual));
+      if (t_mes > 0) {
+        t_mes -= 1;
+      } else {
+        t_mes = 11;
+        t_años -= 1;
+      }
+    }
+
+    // El resultado de las operaciones de año mes y dia
+    alert("Usted tiene " + t_años + " años, " + t_mes + " meses y " + t_dia + " días.");
+
+    // Imprimir los años vividos desde el año de nacimiento hasta el actual
+    let mensaje = "Años que ha vivido:\n";
+    for (let i = año; i <= añoActual; i++) {
+      mensaje += "- " + i + "\n";
+    }
+
+    alert(mensaje);
+  </script>
+</head>
+<body>
+</body>
+</html>
